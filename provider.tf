@@ -12,13 +12,13 @@ terraform {
 }
 
 provider "hcp" {
-  address = var.HCP_CLIENT_ID
-  token = var.HCP_CLIENT_SECRET
+  client_id  = var.HCP_CLIENT_ID
+  client_secret = var.HCP_CLIENT_SECRET
 }
 
 data "hcp_vault_secrets_secret" "gcp_sa_key" {
   app_name = "vault"
-  secret_name = "gcp-sa-key"
+  secret_name = "gcp_sa_key"
 }
 
 provider "google" {
