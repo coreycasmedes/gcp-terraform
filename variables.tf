@@ -8,13 +8,3 @@ variable "region" {
   type        = string
   default     = "us-central1"
 }
-
-variable "HCP_CLIENT_ID" {
-    description = "hashicorp client id"
-    type = string
-}
-
-variable "HCP_CLIENT_SECRET" {
-  description = "hashicorp client secret"
-  type        = string
-}

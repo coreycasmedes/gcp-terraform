@@ -11,10 +11,7 @@ terraform {
   }
 }
 
-provider "hcp" {
-  client_id  = var.HCP_CLIENT_ID
-  client_secret = var.HCP_CLIENT_SECRET
-}
+provider "hcp" {}
 
 data "hcp_vault_secrets_secret" "gcp_sa_key" {
   app_name = "vault"
